@@ -1,0 +1,26 @@
+[project]
+name = "robotics-mastery"
+version = "0.1.0"
+description = "Notebook-based robotics mastery curriculum and reference implementations."
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26",
+  "nbformat>=5.10",
+]
+
+[project.optional-dependencies]
+notebooks = [
+  "matplotlib>=3.8",
+  "jupyterlab>=4.2",
+  "notebook>=7.2",
+  "ipykernel>=6.29",
+]
+advanced = [
+  "gymnasium>=0.29",
+  "torch>=2.2",
+  "torchvision>=0.17",
+  "stable-baselines3>=2.3",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

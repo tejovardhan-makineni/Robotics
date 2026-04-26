@@ -1,0 +1,8 @@
+# Optional stack for the advanced robot-learning chapters.
+# Install only after the core notebooks feel comfortable.
+-r requirements.txt
+gymnasium>=0.29
+torch>=2.2
+torchvision>=0.17
+stable-baselines3>=2.3
+lerobot
