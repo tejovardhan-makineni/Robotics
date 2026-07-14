@@ -1,4 +1,4 @@
-# 24-Week Robotics Mastery Schedule
+# 40-Week Robotics Mastery Schedule
 
 This is a serious but realistic schedule. If you move faster, do not skip projects. Projects are where the knowledge settles.
 
@@ -64,7 +64,7 @@ Notebooks:
 Deliverable:
 - A dataset card, trained behavior cloning policy, and closed-loop evaluation report.
 
-## Weeks 21-24: Frontier And Capstone
+## Weeks 21-24: Frontier And First Capstone
 
 Notebooks:
 - 9 Modern robot learning and VLAs
@@ -74,6 +74,55 @@ Notebooks:
 
 Deliverable:
 - A final portfolio project with a short report, demo, safety plan, and connection to at least one current robotics paper.
+
+## Weeks 25-28: Humanoid Foundations
+
+Notebooks:
+- 31 Humanoid systems overview
+- 32 Humanoid mechatronics and actuators
+- 33 Biped balance with LIPM
+- 34 Humanoid locomotion RL intuition
+- 35 Whole-body control
+
+Deliverable:
+- A humanoid subsystem map and a simulated balance or gait experiment.
+
+## Weeks 29-32: Humanoid Manipulation And Autonomy
+
+Notebooks:
+- 36 Humanoid hands and tactile manipulation
+- 37 Humanoid perception stack
+- 38 Teleoperation and data factory
+- 39 Humanoid VLA architecture
+- 40 Sim-to-real for humanoids
+
+Deliverable:
+- A teleoperation-style dataset and VLA-style action-chunk mock policy.
+
+## Weeks 33-36: Optimus-Style Capstone
+
+Notebooks:
+- 41 Humanoid edge compute
+- 42 Humanoid safety and standards mindset
+- 43 Humanoid manufacturing and cost
+- 44 Open-source humanoid lab
+- 45 Optimus-style capstone
+
+Deliverable:
+- A staged Optimus-like capstone plan with safety gates, metrics, open-source tools, and one runnable subsystem.
+
+## Weeks 37-40: Latest Open-Source Frontier
+
+Notebooks:
+- 46 Open-source robotics frontier radar
+- 47 Open VLA models and action heads
+- 48 Open benchmarks and evaluation harnesses
+- 49 Open simulators and synthetic data
+- 50 Open hardware, humanoids, and dexterity
+
+Deliverable:
+- Your own open-source robotics radar with one project selected for hands-on reproduction.
+- A short memo explaining why you selected it, what you will not attempt yet, and what safety gates apply.
 
 ## Weekly Rhythm
 

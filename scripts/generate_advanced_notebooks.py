@@ -960,7 +960,7 @@ def nb21_ros2_architecture():
             - Actions
             - QoS-like message dropping
 
-            In a real system, use ROS 2 Jazzy LTS for stability or Kilted for latest released features.
+            In a new real system, use ROS 2 Lyrical LTS unless a specific robot, driver, or vendor stack still requires Jazzy, Kilted, or Humble.
             """
         ),
         code(COMMON_IMPORTS),

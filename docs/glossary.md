@@ -12,6 +12,10 @@ A device that turns commands into motion or force, such as a motor or servo.
 
 Supervised learning from demonstrations. The policy learns to map observations to expert actions.
 
+## Action Chunk
+
+A short sequence of future robot actions predicted at once. Action chunks reduce inference pressure but require low-level controllers and safety checks between model calls.
+
 ## Coordinate Frame
 
 A reference origin and axes used to describe positions and orientations.
@@ -27,6 +31,10 @@ The relationship between forces, torques, mass, inertia, acceleration, and motio
 ## Embodiment
 
 The physical form of a robot: arms, grippers, wheels, sensors, degrees of freedom, and action space.
+
+## Evaluation Harness
+
+A repeatable framework for running models on shared tasks, metrics, and environments. In robot learning, a harness helps separate real progress from one-off demos.
 
 ## End Effector
 
@@ -64,6 +72,10 @@ A grid map where each cell stores the probability of being occupied.
 
 A function that maps observations to actions.
 
+## Real-Time Chunking
+
+A deployment strategy where a slower learned policy predicts short action chunks while faster robot control loops consume, smooth, monitor, and interrupt those actions.
+
 ## Proprioception
 
 The robot's internal sensing, such as joint angles, velocities, currents, and gripper state.
@@ -87,3 +99,27 @@ A mathematical object that maps points or poses from one coordinate frame to ano
 ## VLA
 
 Vision-language-action model. A model that maps visual observations and language instructions to robot actions.
+
+## VLA Evaluation
+
+Testing a vision-language-action model across defined tasks, embodiments, action spaces, and metrics. Strong VLA evaluation reports uncertainty, failure cases, and benchmark mismatch.
+
+## Capture Point
+
+For simplified biped balance, the ground point where the robot should step or shift support to stop falling under the linear inverted pendulum model.
+
+## LIPM
+
+Linear inverted pendulum model. A simplified model of biped balance where the center of mass moves at roughly constant height.
+
+## Support Polygon
+
+The ground area enclosed by active contacts, such as a foot or both feet. A robot is more stable when its balance point remains inside this region.
+
+## Whole-Body Control
+
+Control that coordinates many joints and contacts to satisfy multiple tasks at once, such as balancing while moving a hand.
+
+## Teleoperation
+
+Human control of a robot, often used to collect demonstrations for imitation learning.

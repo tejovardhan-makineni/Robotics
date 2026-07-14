@@ -4,3 +4,7 @@ __pycache__/
 .DS_Store
 *.pyc
 data/generated/
+offline/papers/*.pdf
+offline/repos/*.zip
+offline/wheels/
+offline/logs/

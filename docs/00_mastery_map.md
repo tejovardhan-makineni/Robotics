@@ -109,10 +109,12 @@ You master robotics by debugging the gap between the model in your head and the 
 
 By the end, you should have:
 
-- 30 completed notebooks.
+- 50 completed notebooks.
 - A glossary of concepts in your own words.
 - At least 3 portfolio projects.
 - One paper reproduction or partial reproduction.
 - One ROS 2 simulation project.
 - One robot-learning dataset and trained policy.
+- One humanoid/Optimus-style staged capstone plan.
+- One open-source robotics frontier radar that you update monthly.
 - A written safety and evaluation plan.

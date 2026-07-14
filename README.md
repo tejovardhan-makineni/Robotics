@@ -14,7 +14,7 @@ pip install -r requirements.txt
 jupyter lab
 ```
 
-Open the notebooks in order from `notebooks/01_...ipynb` through `notebooks/10_...ipynb`.
+Open the notebooks in order from `notebooks/01_...ipynb` through `notebooks/50_...ipynb`. The first ten are the foundation; the later notebooks build toward advanced control, robot learning, humanoids, and the latest open-source frontier.
 
 The code uses NumPy as the core dependency. Matplotlib is used for plots when installed. Without Matplotlib, the notebooks still run and print numeric results.
 
@@ -23,13 +23,15 @@ To regenerate and smoke-check the notebooks:
 ```bash
 python3 scripts/generate_notebooks.py
 python3 scripts/generate_advanced_notebooks.py
+python3 scripts/generate_humanoid_notebooks.py
+python3 scripts/generate_frontier_notebooks.py
 MPLBACKEND=Agg python3 scripts/smoke_check_notebooks.py
 python3 tests/test_core.py
 ```
 
 ## Learning Path
 
-This project now has 30 notebooks. The short index is below; the full guide is [docs/notebook_index.md](docs/notebook_index.md).
+This project now has 50 notebooks. The short index is below; the full guide is [docs/notebook_index.md](docs/notebook_index.md).
 
 | Range | Theme | Outcome |
 |---:|---|---|
@@ -39,6 +41,8 @@ This project now has 30 notebooks. The short index is below; the full guide is [
 | 21-23 | ROS 2 architecture, simulation, datasets | Think like a robotics systems engineer |
 | 24-26 | Robot learning | Train and evaluate policies from data or reward |
 | 27-30 | Safety, multi-robot systems, research, capstone | Move toward real-world and research-ready projects |
+| 31-45 | Humanoid and Optimus-style robotics | Study biped balance, whole-body control, hands, teleop, VLA architecture, sim-to-real, safety, manufacturing, and open-source humanoid labs |
+| 46-50 | Latest open-source robotics frontier | Track ROS 2 Lyrical, LeRobot v0.5, OpenPI/pi0.5, SmolVLA, Xiaomi-Robotics-0, Dexora, VLA evaluation, open simulators, and open humanoid hardware |
 
 ## Project Structure
 
@@ -56,6 +60,8 @@ Robotics
 ├── scripts/
 │   ├── generate_notebooks.py
 │   ├── generate_advanced_notebooks.py
+│   ├── generate_humanoid_notebooks.py
+│   ├── generate_frontier_notebooks.py
 │   └── smoke_check_notebooks.py
 ├── src/
 │   └── robotics_mastery/
@@ -66,10 +72,15 @@ Robotics
 ## Mastery Docs
 
 - [Mastery map](docs/00_mastery_map.md)
+- [Zero to Hero course](docs/zero_to_hero_course.md)
 - [Notebook index](docs/notebook_index.md)
-- [24-week schedule](docs/study_schedule_24_weeks.md)
+- [40-week schedule](docs/study_schedule_40_weeks.md)
+- [Offline learning guide](docs/offline_learning_guide.md)
 - [Software toolchain 2026](docs/software_toolchain_2026.md)
 - [Robot learning stack](docs/robot_learning_stack.md)
+- [Latest open-source advancements 2026](docs/latest_open_source_advancements_2026.md)
+- [Optimus-like humanoid track](docs/optimus_like_humanoid_track.md)
+- [Open-source humanoid resources 2026](docs/open_source_humanoid_resources_2026.md)
 - [Safety guide](docs/safety_first.md)
 - [Hardware lab guide](docs/hardware_lab_guide.md)
 - [Research reading roadmap](docs/research_reading_roadmap.md)
@@ -78,7 +89,7 @@ Robotics
 - [Exercise bank](exercises/exercise_bank.md)
 - [Project briefs](projects/project_briefs.md)
 
-## 24-Week Roadmap
+## 40-Week Roadmap
 
 Weeks 1-4: Foundations. Work through notebooks 1, 2, 3, 11, 12, 13, 14.
 
@@ -91,6 +102,14 @@ Weeks 13-16: Robot software, control, simulation, and safety. Work through noteb
 Weeks 17-20: Robot learning. Work through notebooks 7, 8, 23, 24, 25, 26.
 
 Weeks 21-24: Frontier research and capstone. Work through notebooks 9, 29, 30 and complete one project brief.
+
+Weeks 25-28: Humanoid foundations. Work through notebooks 31-35.
+
+Weeks 29-32: Humanoid manipulation, perception, teleoperation, and VLA architecture. Work through notebooks 36-40.
+
+Weeks 33-36: Edge compute, safety, manufacturing, open-source humanoid lab design, and Optimus-style capstone. Work through notebooks 41-45.
+
+Weeks 37-40: Latest open-source frontier. Work through notebooks 46-50 and update your own robotics radar.
 
 ## What "Training A Robot" Means
 
@@ -118,7 +137,10 @@ Key sources used to shape this path:
 - [LeRobot](https://arxiv.org/abs/2602.22818)
 - [GR00T N1](https://arxiv.org/abs/2503.14734)
 - [Gemini Robotics-ER 1.6](https://deepmind.google/models/model-cards/gemini-robotics-er-1-6/)
-- [ROS 2 distributions](https://docs.ros.org/en/ros2_documentation/kilted/Releases.html)
+- [ROS 2 Lyrical Luth](https://docs.ros.org/en/lyrical/Releases/Release-Lyrical-Luth.html)
+- [LeRobot v0.5.0](https://huggingface.co/blog/lerobot-release-v050)
+- [OpenPI](https://github.com/Physical-Intelligence/openpi)
+- [vla-evaluation-harness](https://github.com/allenai/vla-evaluation-harness)
 
 ## After The Notebooks
 
@@ -129,6 +151,6 @@ Build one physical or simulated robot project. The fastest beginner path is:
 3. Add noisy sensors and localization.
 4. Add A* or RRT planning.
 5. Add a learned policy for one narrow skill.
-6. Move to ROS 2 Jazzy or Kilted once the concepts feel clear.
+6. Move to ROS 2 Lyrical LTS once the concepts feel clear, unless a specific robot still requires Jazzy, Kilted, or Humble.
 
 For real hardware, add physical safety from day one: low speeds, soft limits, current limits, collision checks, emergency stop, logs, and a human outside the robot workspace during tests.

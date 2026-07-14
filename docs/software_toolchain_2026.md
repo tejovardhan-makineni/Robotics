@@ -1,6 +1,6 @@
 # Robotics Software Toolchain 2026
 
-Checked on 2026-04-26.
+Checked on 2026-06-11.
 
 This guide is a practical map of tools worth learning after you finish the core notebooks.
 
@@ -9,12 +9,13 @@ This guide is a practical map of tools worth learning after you finish the core 
 Use ROS 2 for real robot software architecture: nodes, topics, services, actions, parameters, transforms, launch files, logging, replay, and distributed systems.
 
 Current orientation:
-- Kilted Kaiju is the latest released ROS 2 distribution.
-- Jazzy Jalisco is the latest long-term support distribution.
-- Lyrical Luth is planned for May 2026.
+- Lyrical Luth is the latest long-term support ROS 2 distribution, released in May 2026 and supported until May 2031.
+- Jazzy Jalisco remains a supported LTS release and may still be required by some vendor stacks.
+- Kilted Kaiju is a non-LTS distribution with support into late 2026.
 
 Sources:
-- [ROS 2 distributions](https://docs.ros.org/en/ros2_documentation/kilted/Releases.html)
+- [ROS 2 Lyrical Luth release notes](https://docs.ros.org/en/lyrical/Releases/Release-Lyrical-Luth.html)
+- [ROS docs home](https://docs.ros.org/)
 - [ROS getting started](https://ros.org/blog/getting-started/)
 
 Learn after notebooks: 1, 2, 3, 4, 6, 21, 27.
@@ -96,6 +97,32 @@ Sources:
 - [LeRobot v0.5.0 announcement](https://huggingface.co/blog/lerobot-release-v050)
 
 Learn after notebooks: 7, 9, 22, 23, 24, 25, 29.
+
+## Humanoid-Focused Tooling
+
+Use these after you understand simulation, robot learning, and safety:
+
+- Isaac Lab for scalable humanoid policy training.
+- Humanoid-Gym and Booster Gym for locomotion training recipes.
+- LeRobot for robot datasets, policies, and supported humanoid/humanoid-adjacent integrations.
+- MuJoCo for local dynamics experiments and sim-to-sim checks.
+- ROS 2 plus ros2_control for hardware-facing robot architecture.
+
+Relevant notebooks: 31-45.
+
+## Latest Open-Source Frontier
+
+Use these as a radar after you have the foundations:
+
+- LeRobot v0.5.0 for Unitree G1 humanoid support, EnvHub, Pi0-FAST, Real-Time Chunking, and IsaacLab-Arena integration.
+- OpenPI for pi0, pi0-FAST, and pi0.5-style VLA workflows.
+- SmolVLA for smaller and more accessible VLA experimentation.
+- Xiaomi-Robotics-0 for real-time VLA deployment ideas.
+- Dexora for high-DoF bimanual dexterous VLA research.
+- vla-evaluation-harness for open VLA benchmarking.
+- ManiSkill, RoboCasa365, RoboTwin 2.0, Genesis, LIBERO, and CALVIN for simulation and benchmark coverage.
+
+Relevant notebooks: 46-50.
 
 ## Recommended Order
 

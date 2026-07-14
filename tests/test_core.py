@@ -18,6 +18,11 @@ from robotics_mastery import (  # noqa: E402
     quaternion_multiply,
     transform2,
     velocity_obstacle_safe,
+    capture_point,
+    footstep_sequence,
+    lipm_step,
+    retarget_joint_angles,
+    support_polygon_margin,
 )
 
 
@@ -59,9 +64,29 @@ def test_estimation_and_safety():
     assert not velocity_obstacle_safe(np.array([1.0, 0.0]), np.array([-1.0, 0.0]), 0.5, 2.0)
 
 
+def test_humanoid_helpers():
+    x_next, v_next = lipm_step(0.1, 0.0, 0.0)
+    assert x_next > 0.1
+    assert capture_point(0.0, 1.0) > 0.0
+
+    steps = footstep_sequence(0.25, 0.1, 4)
+    assert steps.shape == (4, 2)
+    assert np.allclose(steps[:, 1], [0.1, -0.1, 0.1, -0.1])
+
+    square_ccw = np.array([[-1, -1], [1, -1], [1, 1], [-1, 1]], dtype=float)
+    assert support_polygon_margin(np.array([0.0, 0.0]), square_ccw) > 0
+    assert support_polygon_margin(np.array([2.0, 0.0]), square_ccw) < 0
+
+    human = np.array([0.0, 0.5])
+    human_limits = np.array([[-1.0, 1.0], [0.0, 1.0]])
+    robot_limits = np.array([[-2.0, 2.0], [-0.5, 0.5]])
+    assert np.allclose(retarget_joint_angles(human, human_limits, robot_limits), [0.0, 0.0])
+
+
 if __name__ == "__main__":
     test_geometry()
     test_quaternion_identity()
     test_planning_and_control()
     test_estimation_and_safety()
+    test_humanoid_helpers()
     print("core tests passed")

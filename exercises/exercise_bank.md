@@ -49,3 +49,30 @@ Use these after each notebook. The goal is active mastery.
 3. Build a dataset format and dataset card.
 4. Build a safety filter that blocks unsafe learned actions.
 5. Write a final report with plots and failure cases.
+
+## Humanoid And Optimus-Style Track
+
+1. Build a capture-point stabilizer for notebook 33.
+2. Add terrain randomization to notebook 34.
+3. Add contact constraints to notebook 35.
+4. Add fragile-object force limits to notebook 36.
+5. Add object memory timeout to notebook 37.
+6. Add teleoperation timestamp alignment checks to notebook 38.
+7. Add a recovery skill to notebook 39.
+8. Add a staged deployment checklist to notebook 40.
+9. Add cloud outage behavior to notebook 41.
+10. Write a safety case for a low-speed humanoid tabletop task.
+11. Replace the toy BOM in notebook 43 with your own estimate.
+12. Design your open-source humanoid lab in notebook 44.
+13. Fill out the Optimus-style capstone roadmap in notebook 45.
+
+## Latest Open-Source Frontier
+
+1. Add one newly released robotics project to notebook 46 and justify the score.
+2. Compare SmolVLA, OpenPI/pi0.5, Xiaomi-Robotics-0, and Dexora for your budget and hardware.
+3. Add latency, memory, and safety-fallback columns to notebook 47.
+4. Recompute notebook 48 with 30, 120, and 1000 evaluation episodes.
+5. Add ManiSkill, RoboCasa365, RoboTwin 2.0, Genesis, LIBERO, and CALVIN to your simulator decision memo.
+6. Build a no-hardware reproduction plan for one VLA benchmark.
+7. Design a safe hardware ladder from desktop robot to arm to hand to humanoid.
+8. Write a monthly update process for keeping your robotics radar current.

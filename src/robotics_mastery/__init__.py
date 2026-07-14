@@ -11,6 +11,14 @@ from .geometry import (
     transform2,
     wrap_angle,
 )
+from .humanoid import (
+    actuator_power,
+    capture_point,
+    footstep_sequence,
+    lipm_step,
+    retarget_joint_angles,
+    support_polygon_margin,
+)
 from .planning import astar_grid
 from .safety import limit_norm, velocity_obstacle_safe
 
@@ -30,4 +38,10 @@ __all__ = [
     "transform2",
     "velocity_obstacle_safe",
     "wrap_angle",
+    "actuator_power",
+    "capture_point",
+    "footstep_sequence",
+    "lipm_step",
+    "retarget_joint_angles",
+    "support_polygon_margin",
 ]

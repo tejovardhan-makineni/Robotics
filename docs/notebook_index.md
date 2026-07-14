@@ -40,6 +40,36 @@
 | 29 | `29_research_paper_reading.ipynb` | Reading and reproducing robotics papers |
 | 30 | `30_master_capstone_portfolio.ipynb` | Portfolio-level capstone planning |
 
+## Humanoid And Optimus-Style Track
+
+| # | Notebook | Focus |
+|---:|---|---|
+| 31 | `31_humanoid_systems_overview.ipynb` | Humanoid subsystem decomposition |
+| 32 | `32_humanoid_mechatronics_actuators.ipynb` | Actuators, torque, power, compliance |
+| 33 | `33_biped_balance_lipm.ipynb` | LIPM, capture point, support polygon |
+| 34 | `34_humanoid_locomotion_rl.ipynb` | RL locomotion intuition and gait robustness |
+| 35 | `35_whole_body_control.ipynb` | Task prioritization and whole-body objectives |
+| 36 | `36_humanoid_hands_tactile.ipynb` | Dexterous hands, tactile feedback, slip |
+| 37 | `37_humanoid_perception_stack.ipynb` | Scene graphs, tracking, task-relevant perception |
+| 38 | `38_teleoperation_data_factory.ipynb` | Teleoperation, latency, data quality |
+| 39 | `39_humanoid_vla_architecture.ipynb` | Language-conditioned skill and action chunk architecture |
+| 40 | `40_sim_to_real_humanoids.ipynb` | Sim-to-real robustness and deployment stages |
+| 41 | `41_humanoid_edge_compute.ipynb` | Real-time loops, latency budgets, async inference |
+| 42 | `42_humanoid_safety_standards.ipynb` | Human-scale safety mindset and risk scoring |
+| 43 | `43_humanoid_manufacturing_cost.ipynb` | BOM, reliability, fleet learning |
+| 44 | `44_open_source_humanoid_lab.ipynb` | Open-source lab design and platform selection |
+| 45 | `45_optimus_style_capstone.ipynb` | Optimus-style staged capstone roadmap |
+
+## Latest Open-Source Robotics Frontier
+
+| # | Notebook | Focus |
+|---:|---|---|
+| 46 | `46_open_source_robotics_frontier_radar.ipynb` | Current open-source robotics ecosystem radar |
+| 47 | `47_open_vla_models_action_heads.ipynb` | Open VLA models and action-head tradeoffs |
+| 48 | `48_open_benchmarks_evaluation_harnesses.ipynb` | Open benchmarks, confidence intervals, VLA evaluation |
+| 49 | `49_open_simulators_synthetic_data.ipynb` | Open simulators, synthetic data, domain randomization |
+| 50 | `50_open_hardware_humanoids_dexterity.ipynb` | Open humanoid hardware and dexterity ladder |
+
 ## How To Use The Notebooks
 
 Do not only run them. For every notebook, do three things:

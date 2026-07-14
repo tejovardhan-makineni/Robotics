@@ -66,6 +66,26 @@ Questions:
 - What is the most convincing experiment?
 - What is missing for deployment?
 
+## Phase 6: Open-Source Robotics Frontier
+
+Read:
+- [Latest open-source advancements in this repo](latest_open_source_advancements_2026.md)
+- [LeRobot v0.5.0](https://huggingface.co/blog/lerobot-release-v050)
+- [OpenPI](https://github.com/Physical-Intelligence/openpi)
+- [Xiaomi-Robotics-0](https://xiaomi-robotics-0.github.io/)
+- [Dexora](https://github.com/dexoravla/Dexora)
+- [vla-evaluation-harness](https://github.com/allenai/vla-evaluation-harness)
+- [ManiSkill](https://www.maniskill.ai/)
+- [RoboTwin 2.0](https://robotwin-platform.github.io/)
+- [RUKA-v2](https://ruka-hand-v2.github.io/)
+
+Questions:
+- What is actually open: code, weights, data, hardware files, or only a paper?
+- What benchmark or robot does the project target?
+- What would it cost to reproduce the smallest useful result?
+- What safety gates would be required before hardware deployment?
+- Which notebook from 46-50 helps you evaluate it?
+
 ## Paper Review Template
 
 For every paper, write:

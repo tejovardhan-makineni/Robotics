@@ -1,6 +1,6 @@
 # Latest Robotics Research Brief
 
-Checked on 2026-04-26.
+Checked on 2026-06-11.
 
 ## Big Picture
 
@@ -67,14 +67,56 @@ Read:
 - [Vision-Language-Action in Robotics: A Survey of Datasets, Benchmarks, and Data Engines](https://openreview.net/forum?id=tAaWFpvnmm)
 - [Gemini Robotics-ER 1.6: Enhanced Embodied Reasoning](https://deepmind.google/blog/gemini-robotics-er-1-6/)
 
-## ROS 2 Status
+### 7. Open-source frontier to include in your learning radar
 
-ROS 2 remains the main production-oriented open robotics middleware. As of this check, ROS 2 Kilted is the latest released distribution, Jazzy is the latest long-term support distribution, and Lyrical is the next release planned for May 2026.
+The latest open-source robotics stack is now broad enough that learners should track it as its own layer: middleware, data collection, VLA models, benchmarks, simulation, and hardware.
 
 Read:
-- [ROS 2 distributions](https://docs.ros.org/en/ros2_documentation/kilted/Releases.html)
+- [LeRobot v0.5.0 release](https://huggingface.co/blog/lerobot-release-v050)
+- [OpenPI GitHub](https://github.com/Physical-Intelligence/openpi)
+- [SmolVLA announcement](https://huggingface.co/blog/smolvla)
+- [Xiaomi-Robotics-0 project page](https://xiaomi-robotics-0.github.io/)
+- [Dexora GitHub](https://github.com/dexoravla/Dexora)
+- [vla-evaluation-harness](https://github.com/allenai/vla-evaluation-harness)
+- [ManiSkill](https://www.maniskill.ai/)
+- [RoboCasa365](https://arxiv.org/html/2603.04356v1)
+- [RoboTwin 2.0](https://robotwin-platform.github.io/)
+- [Genesis World](https://genesis-world.readthedocs.io/)
+- [RUKA-v2](https://ruka-hand-v2.github.io/)
+
+## ROS 2 Status
+
+ROS 2 remains the main production-oriented open robotics middleware. As of this check, ROS 2 Lyrical Luth is the latest long-term support distribution, released in May 2026 and supported until May 2031. Jazzy remains a supported LTS release, while Kilted is useful mainly when a specific dependency or vendor stack requires it.
+
+Read:
+- [ROS 2 Lyrical Luth release notes](https://docs.ros.org/en/lyrical/Releases/Release-Lyrical-Luth.html)
+- [ROS docs home](https://docs.ros.org/)
 - [ROS getting started](https://ros.org/blog/getting-started/)
 
 ## How This Project Uses The Research
 
 The notebooks start with the fundamentals because every modern robot-learning system still needs frames, state, action, dynamics, feedback, calibration, and evaluation. The final notebooks connect those fundamentals to imitation learning, reinforcement learning, diffusion/flow policies, VLA models, and a capstone robot stack.
+
+## Humanoid And Optimus-Style Robotics
+
+For Optimus-like robots, treat public information carefully. Tesla publicly describes Optimus as a general-purpose, bipedal, autonomous humanoid robot for unsafe, repetitive, or boring tasks, but detailed implementation is not public.
+
+Open and public systems worth studying include:
+- [Tesla AI & Robotics](https://www.tesla.com/AI?redirect=no)
+- [NVIDIA Isaac GR00T](https://developer.nvidia.com/isaac/gr00t)
+- [GR00T N1](https://arxiv.org/abs/2503.14734)
+- [Gemini Robotics](https://deepmind.google/models/gemini-robotics/)
+- [LeRobot](https://huggingface.co/docs/lerobot/main/index)
+- [LeRobot Unitree G1 support](https://huggingface.co/docs/lerobot/unitree_g1)
+- [OpenPI](https://github.com/Physical-Intelligence/openpi)
+- [Xiaomi-Robotics-0](https://github.com/XiaomiRobotics/Xiaomi-Robotics-0)
+- [Dexora](https://github.com/dexoravla/Dexora)
+- [Humanoid-Gym](https://github.com/roboterax/humanoid-gym)
+- [Isaac Lab](https://developer.nvidia.com/isaac/lab)
+- [Berkeley Humanoid](https://arxiv.org/abs/2407.21781)
+- [Berkeley Humanoid Lite](https://arxiv.org/abs/2504.17249)
+- [ToddlerBot](https://arxiv.org/abs/2502.00893)
+- [Reachy 2 in LeRobot](https://huggingface.co/docs/lerobot/en/reachy2)
+- [RUKA-v2](https://ruka-hand-v2.github.io/)
+
+The detailed 2026 open-source frontier map lives in [docs/latest_open_source_advancements_2026.md](../docs/latest_open_source_advancements_2026.md).
